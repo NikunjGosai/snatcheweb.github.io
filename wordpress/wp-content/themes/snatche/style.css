@@ -1,0 +1,265 @@
+/*
+Theme Name: snatche
+*/
+
+:root {
+    --primary-color: #CCFF00;
+    --black-color: #000;
+    --white-color: #fff;
+    --gradient-color: linear-gradient(to right, #fff, #CCFF00);
+}
+  
+* {margin: 0;padding: 0;word-break: break-word;box-sizing: border-box;font-family: "Montserrat", sans-serif;}
+:after,:before {box-sizing: border-box;}
+li,ul {list-style: none;margin: 0;padding: 0;}
+a {font: inherit;text-decoration: none;outline: 0;}
+a:focus {outline: 0;box-shadow: none;}
+.container {max-width: 100%;width: 1150px;margin: 0 auto;}
+.container, .container-fluid {margin-left: auto;margin-right: auto;padding-left: 10px;padding-right: 10px;}
+.img-responsive {display: block;height: auto;-o-object-fit: cover;object-fit: cover;width: 100%;}
+body {background-color: var(--black-color);}
+.main-wrapper, .premium-sell_content, .footer-wrapper {position: relative;}
+.main-wrapper::before {content: "";background: url('./assets/img/bg-img-2.png') no-repeat;width: 800px;height: 800px;position: absolute;top: 8%;left: 215px;transform: translate(-50%);z-index: -1;background-size: contain;background-position: center;}
+.main-wrapper::after {content: "";background: url('./assets/img/bg-img-1.png') no-repeat;width: 800px;height: 800px;position: absolute;top: -208px;right: 0;z-index: -1;background-size: contain;background-position: center;}
+
+/* common css start */
+.comm-img-wrap {width: 100%;height: 100%;}
+.comm-desc {color: var(--white-color);font-size: 25px;font-weight: 500;line-height: 39px;overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;}
+.comm-btn, .comm-btn .wpcf7-submit {background: var(--gradient-color);color: var(--black-color);font-size: 18px;font-weight: 700;width: 189px;height: 52px;display: flex;align-items: center;justify-content: center;position: relative;text-transform: capitalize;border: none;cursor: pointer;}
+.comm-btn:hover, .comm-btn .wpcf7-submit:hover {background: linear-gradient(to left, #fff, #CCFF00);text-decoration: underline;transition: all .5s;}
+
+/* header start */
+.header-wrapper {margin-top: 110px;position: relative;margin-bottom: 40px;}
+.header-wrapper::before {content: "";background: url('./assets/img/reseller-top-brand.svg') no-repeat; width: 100%;height: 42px;position: absolute;top: -110px;left: 0;}
+.header_main-wrap {display: flex;align-items: center;justify-content: space-between;}
+.header_logo, .footer_logo {width: 209px;}
+.header_logo-icon svg, .footer_logo-icon svg, .footer_link a svg {display: block;width: 100%;height: 100%;}
+
+/* premium sell start */
+.premium-sell-wrapper {margin-bottom: 160px;position: relative;}
+.premium-sell-wrapper::before {content: "";background: url('./assets/img/premium-sell-square-2.png') no-repeat;width: 360px;height: 355px;position: absolute;top: 240px;left: 30%;transform: translateX(-50%);z-index: -1;}
+.premium-sell-wrapper::after {content: "";background: url('./assets/img/premium-sell-square-1.png') no-repeat;width: 280px;height: 410px;position: absolute;top: -140px;right: 0;z-index: -1;}
+.premium-sell_main-wrap, .selling-shoes_main-wrap, .org-verified_main-wrap {display: flex;justify-content: center;}
+.premium-sell_img-wrap {width: 100%;height: 100%;margin-right: 30px;position: relative;}
+.premium-sell_content::before {content: "";background: url('./assets/img/register-now-1.svg') no-repeat;width: 155px;height: 155px;position: absolute;top: -20px;right: 125px;transform: translateX(-50%);} 
+.premium-sell_content::after {content: "";background: url('./assets/img/register-now-2.svg') no-repeat;width: 97px;height: 90px;position: absolute;top: 15px;right: 185px;transform: translateX(-50%);} 
+.premium-sell_sub-title {color: var(--white-color);font-size: 34px;font-weight: 800;line-height: 40px;text-transform: uppercase;margin-bottom: 15px;}
+.premium-sell_title {color: var(--white-color);font-size: 63px;font-weight: 800;line-height: 70px;text-transform: uppercase;width: 465px;margin-bottom: 15px;}
+.premium-sell_title span, .lowest-fees_title span, .selling-shoes_title span {color: var(--primary-color);}
+.premium-sell_desc {color: var(--white-color);font-size: 20px;font-weight: 500;line-height: 26px;padding-right: 80px;overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;margin-bottom: 40px;}
+
+/* lowest fees start */
+.lowest-fees-wrapper {margin-bottom: 120px;position: relative;}
+.lowest-fees-wrapper::before {content: "";background: url('./assets/img/lowest-fees-square-1.png') no-repeat;width: 400px;height: 400px;position: absolute;top: 50%;right: 0;transform: translateY(-50%);z-index: -1;}
+.lowest-fees-wrapper::after {content: "";background: url('./assets/img/lowest-fees-circle.png') no-repeat;    width: 294px;height: 535px;position: absolute;top: -50%;right: 150px;transform: translateX(50%);}
+.lowest-fees_content {width: 80%;position: relative;}
+.lowest-fees_title {color: var(--white-color);font-size: 42px;font-weight: 800;line-height: 50px;text-transform: uppercase;margin-bottom: 20px;}
+.lowest-fees_title span {display: block;font-size: 63px;line-height: 70px;}
+.lowest-fees_title-txt {color: var(--black-color);font-size: 87px;font-weight: 800;text-transform: uppercase;line-height: 94px;text-shadow: 4px 6px rgb(222 213 213);}
+
+/* selling shoes start */
+.selling-shoes-wrapper {position: relative;padding-bottom: 140px;}
+.selling-shoes-wrapper::before {content: "";background: url('./assets/img/bg-img-3.png') no-repeat;width: 800px;height: 800px;position: absolute;top: -455px;right: 0;background-size: contain;background-position: right;z-index: 1;}
+.selling-shoes-wrapper::after {content: "";background: url('./assets/img/site-brand-1.svg') no-repeat;width: 100%;height: 34px;position: absolute;bottom: -20px;left: 0;}
+.selling-shoes_main-wrap {align-items: center;}
+.selling-shoes_content {padding: 0 40px;position: relative;}
+.selling-shoes_content::after {content: "";background: url('./assets/img/site-letter.png') no-repeat;width: 125px;height: 125px;position: absolute;top: -90px;right: -20px;transform: translateX(-50%);}
+.selling-shoes_title {color: var(--white-color);font-size: 32px;font-weight: 800;line-height: 39px;text-transform: uppercase;margin-bottom: 20px;}
+.selling-shoes_title span {display: block;font-size: 45px;line-height: 52px;}
+
+/* original verified start */
+.org-verified-wrapper {background-color: var(--white-color);padding: 140px 0;position: relative;z-index: -1;}
+.org-verified-wrapper::before {content: "";background: url('./assets/img/verified-square-img-1.svg') no-repeat;width: 100%;height: 100%;position: absolute;top: 80px;left: -145px;transform: translateY(-50%);z-index: 1;}
+.org-verified-wrapper::after {content: "";background: url('./assets/img/verified-square-img-2.svg') no-repeat;width: 375px;height: 300px;position: absolute;bottom: -15px;right: -185px;transform: translateX(-50%);z-index: -1;}    
+.org-verified_content {width: calc(100% - 290px);}
+.org-verified_main-wrap {align-items: center;justify-content: space-between;z-index: 2;position: relative;}
+.org-verified_title {color: var(--black-color);font-size: 60px;font-weight: 800;line-height: 70px;margin-bottom: 20px;text-transform: uppercase;}
+.org-verified_content .comm-desc {color: var(--black-color);}
+.org-verified_main-wrap .comm-img-wrap {max-width: 255px;}
+
+/* contact form start */
+.form-wrapper {padding: 120px 0;position: relative;z-index: 1;}
+.form-wrapper::before {content: "";background: url('./assets/img/site-brand-2.svg') no-repeat;width: 100%;height: 34px;position: absolute;top: -20px;left: 0;}
+.form-wrapper::after {content: "";background: url('./assets/img/bg-img-2.png') no-repeat;width: 900px;height: 900px;position: absolute;top: 0;left: 0;z-index: -1;background-size: cover;background-position: center;}
+.form_inner-wrap {width: 770px;margin: 0 auto;background-color: #302e2ee3;padding: 40px 60px 40px 240px;position: relative;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
+.form_inner-wrap::before {content: "";background: url('./assets/img/site-txt-img.svg') no-repeat;width: 368px;height: 520px;position: absolute;top: -50px;left: -50%;transform: translateX(50%);}
+.form_title { background: linear-gradient(to right, #CCFF00, #fff);-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;font-size: 20px;font-weight: 800;line-height: 26px;text-transform: uppercase;margin-bottom: 15px;}
+.form_title span {display: block;font-size: 36px;line-height: 42px;}
+.form_input-box {margin-bottom: 5px;}
+.form_input-box input {background-color: #424634;border: none;color: #5d604f;font-size: 25px;font-weight: 500;width: 100%;height: 60px;line-height: 31px;padding: 15px;z-index: 1;position: relative;}
+.form_input-box input:focus {background-color: var(--white-color);color: var(--black-color);border: none;outline: none;font-weight: 700;width: 510px;margin-left: -20px;}
+.form_input-box input::placeholder {font-size: 26px;}
+.submit-btn {border: none;cursor: pointer;margin-top: 20px;}
+
+/* footer start */
+.footer-wrapper::after {content: "";background: url('./assets/img/bg-img-3.png') no-repeat;width: 600px;height: 900px;position: absolute;bottom: -60px;right: 0;background-size: cover;background-position: right;z-index: -1;}
+.footer_inner-wrap {display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.footer_logo {margin-bottom: 40px;}
+.footer_copyright {color: var(--white-color);font-size: 19px;font-weight: 500;line-height: 26px;margin-bottom: 20px;}
+.footer_desc {color: var(--white-color);font-size: 16px;font-weight: 500;line-height: 26px;text-align: center;overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 4;margin-bottom: 40px;}
+.footer_link-wrap {margin-bottom: 60px;}
+.footer_link-title {color: var(--white-color);font-size: 21px;font-weight: 600;line-height: 28px;margin-bottom: 10px;text-align: center;}
+.footer_list {display: flex;align-items: center;justify-content: center;}
+.footer_link {width: 59px;height: 57px;margin-right: 5px;}
+.footer_link a:hover svg path {fill: var(--white-color);}
+
+@media (min-width: 1200px) {
+    .container {max-width: 100%;width: 1150px;}
+}
+
+@media only screen and (max-width: 1200px) {
+
+    /* premium sell start */
+    .premium-sell-wrapper::before, .premium-sell-wrapper::after, .lowest-fees-wrapper::before, .lowest-fees-wrapper::after {display: none;}
+    .premium-sell_content::before {top: 20px;right: -20px;} 
+    .premium-sell_content::after {top: 55px;right: 40px;}
+
+    /* contact form start */
+    .form_inner-wrap {width: 620px;padding: 35px 50px 35px 220px;}
+    .form_inner-wrap::before {width: 100%;height: 460px;top: -75px;left: -85%;}
+    .form_input-box input:focus {width: 100%;margin-left: 0;}
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    /* common css start */
+    .comm-desc {font-size: 20px;line-height: 26px;}
+    .comm-img-wrap {max-width: 400px;margin: 0 auto 20px;}
+
+    /* header start */
+    .header-wrapper {margin-top: 80px;margin-bottom: 30px;}
+    .header-wrapper::before {top: -80px;}
+
+    /* premium seller start */
+    .premium-sell-wrapper, .lowest-fees-wrapper {margin-bottom: 80px;}
+    .premium-sell_sub-title {font-size: 26px;line-height: 32px;}
+    .premium-sell_title {font-size: 55px;line-height: 64px;width: 500px;}
+    .premium-sell_desc {font-size: 18px;line-height: 24px;padding-right: 60px;margin-bottom: 30px;}
+
+    /* lowest fees start */
+    .lowest-fees_title {font-size: 36px;line-height: 44px;margin-bottom: 5px;}
+    .lowest-fees_title span {font-size: 55px;line-height: 62px;}
+    .lowest-fees_title-txt {font-size: 75px;line-height: 82px;}
+
+    /* selling shoes start */
+    .selling-shoes-wrapper {padding-bottom: 80px;}
+    .selling-shoes_title {font-size: 28px;line-height: 35px;}
+    .selling-shoes_title span {font-size: 40px;line-height: 46px;}
+
+    /* original verified start */
+    .org-verified-wrapper {padding: 80px 0;}
+    .org-verified_title {font-size: 45px;line-height: 55px;margin-bottom: 15px;}
+
+    /* contact form start */
+    .form-wrapper {padding: 80px 0;}
+    .form-wrapper::after {width: 100%;height: 100%;}
+    .form_inner-wrap {width: 580px;padding: 30px 45px 30px 200px;}
+    .form_input-box input {font-size: 22px;height: 55px;line-height: 28px;}
+    .form_input-box input::placeholder {font-size: 22px;}
+}
+
+@media only screen and (max-width: 899px) {
+
+    .main-wrapper::before {width: 100%;height: 100%;left: 0;}
+
+    /* common css start */
+    .comm-desc {font-size: 18px;line-height: 24px;}
+    .comm-img-wrap {max-width: 320px;margin: 0 auto 15px;}
+
+    /* header start */
+    .comm-btn, .comm-btn .wpcf7-submit {font-size: 16px;width: 160px;height: 45px;}
+
+    /* premium seller start */
+    .premium-sell-wrapper, .lowest-fees-wrapper {margin-bottom: 60px;}
+    .premium-sell_main-wrap {flex-direction: column;}
+    .premium-sell_img-wrap {max-width: 400px;margin: 0 auto 20px;}
+    .premium-sell_content {padding: 0 10px;}
+    .premium-sell_content::before, .premium-sell_content::after, .form_inner-wrap::before, .selling-shoes_content::after {display: none;}
+    .premium-sell_sub-title {margin-bottom: 10px;}
+    .premium-sell_title {font-size: 45px;line-height: 54px;width: 100%;}
+    .premium-sell_desc {font-size: 16px;line-height: 22px;padding-right: 0;margin-bottom: 20px;}
+
+    /* lowest fees start */
+    .lowest-fees_content, .org-verified_content {width: 100%;}
+    .lowest-fees_title {font-size: 28px;line-height: 36px;margin-bottom: 10px;}
+    .lowest-fees_title span {font-size: 45px;line-height: 52px;}
+    .lowest-fees_title-txt {font-size: 65px;line-height: 72px;}
+
+    /* selling shoes start */
+    .selling-shoes-wrapper {padding-bottom: 60px;}
+    .selling-shoes_main-wrap {flex-direction: column;}
+    .selling-shoes_content {padding: 0;}
+    .selling-shoes_title {font-size: 24px;line-height: 30px;}
+    .selling-shoes_title span {font-size: 35px;line-height: 42px;}
+
+    /* original verified start */
+    .org-verified-wrapper {padding: 60px 0;}
+    .org-verified-wrapper::before {top: 40px;left: -275px;}
+    .org-verified_main-wrap {flex-direction: column-reverse;} 
+    .org-verified_title {font-size: 35px;line-height: 45px;}
+    .org-verified_main-wrap .comm-img-wrap {max-width: 220px;}
+
+    /* contact form start */
+    .form-wrapper {padding: 80px 0 60px;}
+    .form-wrapper::after {width: 100%;height: 100%;top: -140px;left: 0;}
+    .form_inner-wrap {width: 100%;padding: 25px 15px;}
+    .form_title span {font-size: 30px;line-height: 36px;}
+    .form_input-box input {font-size: 18px;height: 45px;line-height: 24px;}
+    .form_input-box input::placeholder {font-size: 18px;}
+
+    /* footer start */
+    .footer_logo {margin-bottom: 20px;}
+    .footer_copyright {font-size: 17px;line-height: 24px;margin-bottom: 15px;}
+    .footer_desc {font-size: 14px;line-height: 24px;margin-bottom: 25px;}
+    .footer_link-wrap {margin-bottom: 40px;}
+    .footer_link-title {font-size: 17px;line-height: 24px;}
+    .footer_link {width: 45px;height: 45px;}
+}
+
+@media only screen and (max-width: 599px) {
+  
+    /* common css start */
+    .comm-desc {font-size: 16px;line-height: 22px;}
+    .comm-btn, .comm-btn .wpcf7-submit {font-size: 14px;width: 110px;height: 35px;}
+
+    /* header start */
+    .header-wrapper {margin-top: 60px;margin-bottom: 20px;}
+    .header-wrapper::before {top: -60px;}
+    .header_logo, .footer_logo {width: 140px;}
+
+    /* premium seller start */
+    .premium-sell-wrapper, .lowest-fees-wrapper {margin-bottom: 40px;}
+    .premium-sell_sub-title {font-size: 18px;line-height: 24px;}
+    .premium-sell_img-wrap {max-width: 280px;margin: 0 auto 15px;}
+    .premium-sell_title {font-size: 35px;line-height: 44px;}
+    .premium-sell_desc {font-size: 14px;line-height: 20px;}
+    .premium-sell_content .comm-btn {width: 125px;}
+
+    /* lowest fees start */
+    .lowest-fees_title {font-size: 20px;line-height: 28px;}
+    .lowest-fees_title span {font-size: 35px;line-height: 42px;}
+    .lowest-fees_title-txt {font-size: 55px;line-height: 62px;}
+
+    /* selling shoes start */
+    .selling-shoes_title {font-size: 20px;line-height: 26px;}
+    .selling-shoes_title span {font-size: 30px;line-height: 36px;}
+
+    /* original verified start */
+    .org-verified-wrapper {padding: 40px 0;}
+    .org-verified-wrapper::before, .org-verified-wrapper::after {display: none;}
+    .org-verified_title {font-size: 35px;line-height: 45px;margin-bottom: 10px;}
+    .org-verified_main-wrap .comm-img-wrap {max-width: 180px;}
+
+    /* contact form start */
+    .form-wrapper {padding: 60px 0 40px;}
+    .form_inner-wrap {padding: 20px 15px;}
+    .form_title {font-size: 18px;line-height: 24px;}
+    .form_title span {font-size: 24px;line-height: 30px;}
+    .form_input-box input {font-size: 16px;line-height: 22px;}
+    .form_input-box input::placeholder {font-size: 16px;}
+
+    /* footer start */
+    .footer_copyright, .footer_link-title {font-size: 15px;line-height: 22px;text-align: center;}
+    .footer_link-wrap {margin-bottom: 20px;}
+    .footer_link {width: 35px;height: 35px;}
+}
